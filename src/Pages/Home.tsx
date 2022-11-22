@@ -1,12 +1,16 @@
 import NavigationBar from "../Components/NavigationBar";
 import Banner from "../Components/Banner";
+import "./Home.scss";
+import CategoryCards from "../Components/CategoryCards";
 
 function Home() {
   return (
     <>
       <NavigationBar></NavigationBar>
       <Banner></Banner>
-      <div>Home</div>
+      <div className="content-container">
+        <CategoryCards></CategoryCards>
+      </div>
     </>
   );
 }
